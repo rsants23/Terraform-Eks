@@ -24,3 +24,4 @@ resource "aws_route_table" "eks_public_route_table" {
     }
   )
 }
+
