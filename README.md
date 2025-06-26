@@ -23,7 +23,7 @@ Provisionar toda a infraestrutura necessária para um cluster EKS completo, com 
 
 ## 📁 Estrutura do Projeto
 
-.
+```
 ├── modules/
 │ ├── vpc/
 │ ├── eks-cluster/
@@ -35,6 +35,7 @@ Provisionar toda a infraestrutura necessária para um cluster EKS completo, com 
 ├── provider.tf
 ├── terraform.tfvars
 └── README.md
+```
 
 yaml
 Copy
