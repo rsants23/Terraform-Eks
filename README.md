@@ -1,16 +1,16 @@
-# 🚀 Provisionamento de Cluster EKS com Terraform na AWS
+# Provisionamento de Cluster EKS com Terraform na AWS
 
 Este repositório contém o projeto desenvolvido durante o curso [Terraform para AWS – Udemy](https://www.udemy.com/share/10ap0s3@S2WjgMZW76Afnaf_VzpdAdI8-wLbx2cLMGq1I_cn7FTUjqGdm7IeDZD2KMrbfvVh/), com foco prático em **Infraestrutura como Código (IaC)** usando Terraform para provisionar um ambiente Kubernetes com Amazon EKS.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Provisionar toda a infraestrutura necessária para um cluster EKS completo, com recursos de rede, controle de acesso, automação de add-ons e organização modularizada.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Terraform
 - AWS (VPC, Subnets, NAT Gateway, Internet Gateway, IAM, EKS, OIDC, ALB/NLB)
@@ -21,7 +21,7 @@ Provisionar toda a infraestrutura necessária para um cluster EKS completo, com 
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 ├── modules/
@@ -43,7 +43,7 @@ Edit
 
 ---
 
-## ✅ O que foi implementado
+## O que foi implementado
 
 - Infraestrutura de rede (VPC, subnets públicas e privadas, rotas, NAT, IGW)
 - Cluster Amazon EKS com OIDC habilitado (IRSA)
@@ -56,7 +56,7 @@ Edit
 
 ---
 
-## 🚀 Como usar
+## Como usar
 
 1. Clone o repositório:
 ```bash
@@ -64,7 +64,7 @@ git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repo
 Configure suas credenciais AWS e backend remoto (se necessário)
 
-Inicialize o Terraform:
+- Inicialize o Terraform:
 
 bash
 Copy
@@ -82,20 +82,17 @@ bash
 Copy
 Edit
 terraform apply
-📚 Curso
+- Curso
 Este projeto foi desenvolvido como parte do curso:
+- Terraform para AWS – Curso na Udemy
+bit.ly/4nlSpuz
 
-👉 Terraform para AWS – Curso na Udemy
-
-🧠 Autor
+- Autor
 Rodolfo Santos
 
-🛡️ Licença
+- Licença
 Este projeto é livre para fins educacionais e profissionais. Customize conforme sua necessidade.
 
-perl
-Copy
-Edit
 
 
 
