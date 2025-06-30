@@ -9,7 +9,7 @@ resource "aws_eks_node_group" "eks_managed_node_group" {
   tags = merge(
     var.tags,
     {
-      Name = "${var.project_name}-mng-role"
+      Name = "${var.project_name}-nodegroup"
     }
   )
 
