@@ -1,104 +1,72 @@
-# Provisionamento de Cluster EKS com Terraform na AWS
+Terraform EKS Project
 
-Este repositório contém o projeto desenvolvido durante o curso [Terraform para AWS – Udemy](https://www.udemy.com/share/10ap0s3@S2WjgMZW76Afnaf_VzpdAdI8-wLbx2cLMGq1I_cn7FTUjqGdm7IeDZD2KMrbfvVh/), com foco prático em **Infraestrutura como Código (IaC)** usando Terraform para provisionar um ambiente Kubernetes com Amazon EKS.
+Provisionamento de um cluster Kubernetes na AWS utilizando Terraform, seguindo boas práticas de Infraestrutura como Código (IaC) e arquitetura cloud.
 
----
+Arquitetura
 
-## Objetivo
+Este projeto cria:
 
-Provisionar toda a infraestrutura necessária para um cluster EKS completo, com recursos de rede, controle de acesso, automação de add-ons e organização modularizada.
+VPC customizada
+Subnets públicas e privadas
+Internet Gateway + NAT Gateway
+Cluster Amazon EKS
+Node Groups gerenciados
+Estrutura modular com Terraform
 
----
-
-## Tecnologias utilizadas
-
-- Terraform
-- AWS (VPC, Subnets, NAT Gateway, Internet Gateway, IAM, EKS, OIDC, ALB/NLB)
-- Kubernetes
-- Helm
-- terraform-docs
-- Pre-commit hooks
-
----
-
-## Estrutura do Projeto
-
-```
+Estrutura do Projeto
+.
 ├── modules/
-│ ├── vpc/
-│ ├── eks-cluster/
-│ ├── node-group/
-│ └── alb-controller/
+│   ├── vpc/
+│   ├── eks/
+│   └── addons/
+│
+├── environments/
+│   └── dev/
+│
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
-├── provider.tf
-├── terraform.tfvars
-└── README.md
-```
 
-yaml
-Copy
-Edit
+Tecnologias Utilizadas
+Terraform
+AWS EKS
+AWS VPC
+Kubernetes
 
----
-
-## O que foi implementado
-
-- Infraestrutura de rede (VPC, subnets públicas e privadas, rotas, NAT, IGW)
-- Cluster Amazon EKS com OIDC habilitado (IRSA)
-- Managed Node Groups
-- Add-on: AWS Load Balancer Controller via Helm
-- Modularização completa com reuso e organização
-- Backend remoto com S3 e DynamoDB
-- Documentação automática com terraform-docs
-- Padrões com hooks de pre-commit
-
----
-
-## Como usar
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-Configure suas credenciais AWS e backend remoto (se necessário)
-
-- Inicialize o Terraform:
-
-bash
-Copy
-Edit
+Como executar
+1. Clone o repositório
+git clone https://github.com/rsants23/Terraform-Eks.git
+cd Terraform-Eks
+2. Inicialize o Terraform
 terraform init
-Visualize o plano:
-
-bash
-Copy
-Edit
+3. Planeje a infraestrutura
 terraform plan
-Aplique a infraestrutura:
-
-bash
-Copy
-Edit
+4. Aplique
 terraform apply
-- Curso
-Este projeto foi desenvolvido como parte do curso:
-- Terraform para AWS – Curso na Udemy
-bit.ly/4nlSpuz
 
-- Autor
+Boas práticas aplicadas
+Infraestrutura como código (IaC)
+Modularização
+Separação de ambientes
+Uso de subnets privadas para workloads
+Versionamento completo da infraestrutura
+
+Roadmap
+ Integração com OpenTelemetry
+ Observabilidade com SigNoz
+ CI/CD com GitHub Actions
+ Autoscaling (Karpenter)
+ Deploy de aplicações reais
+
+Objetivo
+
+Projeto desenvolvido para aprofundar conhecimentos em:
+
+Kubernetes na AWS
+Terraform
+Arquitetura de sistemas distribuídos
+DevOps e automação
+
+Autor
 Rodolfo Santos
-
-- Licença
-Este projeto é livre para fins educacionais e profissionais. Customize conforme sua necessidade.
-
-
-
-
-
-
-
-
-
-
+DevOps | AWS | Infraestrutura | Cloud
