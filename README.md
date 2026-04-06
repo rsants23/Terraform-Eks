@@ -17,14 +17,6 @@ Provisionamento de um cluster Kubernetes na AWS utilizando Terraform, seguindo b
 - Estrutura modular com Terraform
 
 ---
-
-## 🧭 Diagrama da Arquitetura
-
-<!-- Substitua pela imagem exportada do draw.io -->
-![Architecture Diagram](./docs/architecture.png)
-
----
-
 ## 🧱 Estrutura do Projeto
 
 ```bash
@@ -42,3 +34,9 @@ Provisionamento de um cluster Kubernetes na AWS utilizando Terraform, seguindo b
 ├── variables.tf
 ├── outputs.tf
 └── main.tf
+
+⚙️ Tecnologias Utilizadas
+Terraform
+AWS (EKS, VPC, IAM, S3, DynamoDB)
+Kubernetes
+Helm (futuro)
